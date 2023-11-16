@@ -12,7 +12,7 @@ import io
 mydb = mysql.connector.connect(
     user='root',
     host='localhost',
-    password='Arun@mysql9398', auth_plugin='mysql_native_password')
+    password='Yoganand@mysql9323', auth_plugin='mysql_native_password')
 
 mycursor = mydb.cursor()
 mycursor.execute('CREATE DATABASE if not exists bizcard')
@@ -20,11 +20,11 @@ mycursor.execute('Use bizcard')
 
 # SETTING PAGE CONFIGURATIONS
 icon = Image.open("C:\\Users\\arunk\\OneDrive\\Desktop\\business_card_home.png")
-st.set_page_config(page_title="BizCardX: Extracting Business Card Data with OCR | By ARUNKUMAR BAIRAVAN",
+st.set_page_config(page_title="BizCardX: Extracting Business Card Data with OCR | By Guttikonda Yoganand",
                    page_icon=icon,
                    layout="wide",
                    initial_sidebar_state="expanded",
-                   menu_items={'About': """# This OCR app is created by *ARUNKUMAR BAIRAVAN*!"""})
+                   menu_items={'About': """# This OCR app is created by Guttikonda Yoganand!"""})
 st.markdown("<h1 style='text-align: center; color: Green;'>BizCardX: Extracting Business Card Data with OCR</h1>",
             unsafe_allow_html=True)
 
