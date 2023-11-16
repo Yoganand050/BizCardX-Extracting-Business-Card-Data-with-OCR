@@ -19,7 +19,7 @@ mycursor.execute('CREATE DATABASE if not exists bizcard')
 mycursor.execute('Use bizcard')
 
 # SETTING PAGE CONFIGURATIONS
-icon = Image.open("C:\\Users\\arunk\\OneDrive\\Desktop\\business_card_home.png")
+icon = Image.open("C:\\Users\\yoganand\\OneDrive\\Desktop\\business_card_home.png")
 st.set_page_config(page_title="BizCardX: Extracting Business Card Data with OCR | By Guttikonda Yoganand",
                    page_icon=icon,
                    layout="wide",
@@ -53,7 +53,7 @@ selected = option_menu(None, ["Home", "Upload & Modify", "Delete"],
 if selected == "Home":
     col1, col2 = st.columns(2)
     with col1:
-        st.image(Image.open("C:\\Users\\arunk\\OneDrive\\Desktop\\business_card_home.png"), width=500)
+        st.image(Image.open("C:\\Users\\yoganand\\OneDrive\\Desktop\\business_card_home.png"), width=500)
         st.markdown("## :green[**Technologies Used :**] Python,easy OCR, Streamlit, SQL, Pandas")
     with col2:
         st.write(
